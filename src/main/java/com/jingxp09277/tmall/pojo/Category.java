@@ -1,4 +1,4 @@
-package com.how2java.tmall.pojo;
+package com.jingxp09277.tmall.pojo;
 
 public class Category {
     private Integer id;
