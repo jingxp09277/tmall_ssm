@@ -1,15 +1,21 @@
 package com.jingxp09277.tmall.mapper;
 
 import com.jingxp09277.tmall.pojo.Category;
-import com.jingxp09277.tmall.util.Page;
-
+import com.jingxp09277.tmall.pojo.CategoryExample;
 import java.util.List;
 
 public interface CategoryMapper {
-    List<Category> list();
+    int deleteByPrimaryKey(Integer id);
 
-    void add(Category category);
-    void delete(int id);
-    Category get(int id);
-    void update(Category category);
+    int insert(Category record);
+
+    int insertSelective(Category record);
+
+    List<Category> selectByExample(CategoryExample example);
+
+    Category selectByPrimaryKey(Integer id);
+
+    int updateByPrimaryKeySelective(Category record);
+
+    int updateByPrimaryKey(Category record);
 }
