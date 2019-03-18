@@ -60,7 +60,7 @@
 
     <div class="pageDiv">
         <%@include file="../include/admin/adminPage.jsp" %>
-    </div>
+</div>
 
     <div class="panel panel-warning addDiv">
         <div class="panel-heading">新增分类</div>
